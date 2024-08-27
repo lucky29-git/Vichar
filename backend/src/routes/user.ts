@@ -45,12 +45,12 @@ userRouter.post('/signin', async(c) => {
     }).$extends(withAccelerate())
 
     const body = await c.req.json();
-    const {success} = signinInputs.safeParse(body)
-    if(!success){
+    const result = signinInputs.safeParse(body)
+    if(!result.success){
         c.status(411)
+        console.log(result.error.issues)
         return c.text("Invalid signin inputs")
     }
-
     try{
         const user = await prisma.user.findFirst({
             where : {

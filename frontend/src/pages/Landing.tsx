@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { PenSquare, Lightbulb, Users, Zap, PenLine, Sparkles, Link } from "lucide-react"
+import { PenSquare, Lightbulb, Users, Zap, PenLine, Sparkles } from "lucide-react"
 import { useNavigate } from "react-router-dom";
 
 export default function Component() {

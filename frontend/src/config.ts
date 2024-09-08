@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://vichar-backend.lucky291102.workers.dev"

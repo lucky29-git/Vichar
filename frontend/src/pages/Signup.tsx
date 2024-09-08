@@ -25,7 +25,7 @@ export const Signup = () => {
 
     } catch(e){
       console.log(e);
-      alert("Request failed")
+      alert("Invalid credentials")
     }
   }
 

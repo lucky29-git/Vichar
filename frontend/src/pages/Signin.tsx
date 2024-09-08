@@ -37,7 +37,7 @@ export const Signin = () => {
         <div className="w-full max-w-sm mx-auto lg:w-96">
           <div className="flex items-center justify-center mb-8">
             <PenSquare className="h-8 w-8 text-primary mr-2" />
-            <span className="text-2xl font-bold text-primary">Vichar</span>
+            <span className="text-2xl font-bold text-primary" onClick={() => {navigate('/')}}>Vichar</span>
           </div>
           <h2 className="mt-6 text-3xl font-extrabold text-foreground">Sign in to your account</h2>
           <p className="mt-2 text-sm text-muted-foreground">
